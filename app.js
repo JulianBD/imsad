@@ -11,6 +11,6 @@ app.get('/cheerup', (req, res) => {
     res.render('cheerup');
 });
 
-app.listen(3000, () => {
-    console.log('Live at Port 3000');
+app.listen(process.env.PORT || 8080, () => {
+    console.log('App launched');
 });
